@@ -4,7 +4,6 @@ import { executeCommand, setupCommands } from './command.js';
 import { addTrackManager } from './track-manager.js';
 import { disconnectIfAlone } from './voice.js';
 
-
 export const { BOT_TOKEN, APPLICATION_ID } = process.env as { BOT_TOKEN: string; APPLICATION_ID: string; };
 const CLIENT_INTENTS = [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildVoiceStates, GatewayIntentBits.MessageContent];
 export const client = new Client({ intents: CLIENT_INTENTS });
